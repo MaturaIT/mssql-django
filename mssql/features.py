@@ -76,4 +76,5 @@ class DatabaseFeatures(BaseDatabaseFeatures):
 
     @cached_property
     def supports_json_field(self):
-        return self.connection.sql_server_version >= 2016
+        return True
+        #return self.connection.sql_server_version >= 2016
